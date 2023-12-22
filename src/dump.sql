@@ -21,7 +21,8 @@ create table produtos(
     descricao varchar(255) not null,
     quantidade_estoque integer not null,
     valor integer not null,
-    categoria_id integer references categorias(id) not null
+    categoria_id integer references categorias(id) not null,
+    produto_imagem varchar(255);
 );
 
 create table clientes(
@@ -51,6 +52,3 @@ create table pedido_produtos(
     quantidade_produto integer not null,
     valor_produto integer not null
 );
-
-alter table produtos
-add column produto_imagem varchar(255);
