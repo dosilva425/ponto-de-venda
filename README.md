@@ -89,7 +89,8 @@ npm run dev
 - [GET]/pedido
     - [GET]/pedido?cliente_id=id de cliente (filtragem de pedidos por cliente)
 
-# Extras
+<details>
+<summary><b>Maiores Detalhes</b></summary>
 
 ### Banco de Dados
 
