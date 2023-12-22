@@ -34,7 +34,7 @@ const cadastrarPedido = async (req, res) => {
             if (!quantidadeValida) {
                 const respostaQuantidadeEstoque = await knex('produtos').select('quantidade_estoque').where('id', item.produto_id).first();
 
-                return res.status(404).json({
+                return res.status(400).json({
                     mensagem: `Não há quantidade em estoque suficiente para o produto_id = ${item.produto_id}. ` +
                         `Só restam ${respostaQuantidadeEstoque.quantidade_estoque} unidades desse produto.`
                 });
