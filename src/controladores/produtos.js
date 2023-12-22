@@ -43,7 +43,7 @@ const cadastrarProduto = async (req, res) => {
             produto_imagem: imagemUrl || null
         }
 
-        return res.status(200).json(produtoFinal);
+        return res.status(201).json(produtoFinal);
     } catch (error) {
         return res.status(500).json({
             mensagem: 'Erro interno do servidor'

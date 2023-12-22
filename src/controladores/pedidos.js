@@ -74,7 +74,7 @@ const cadastrarPedido = async (req, res) => {
 
         const pedidoCriado = await knex('pedidos').select('id', 'cliente_id', 'observacao', 'valor_total').where('id', cadastroPedido[0].id).first();
 
-        return res.status(200).json({
+        return res.status(201).json({
             id: pedidoCriado.id,
             cliente_id: pedidoCriado.cliente_id,
             observacao: pedidoCriado.observacao,
