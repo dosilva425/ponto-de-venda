@@ -92,7 +92,7 @@ npm run dev
 <details>
 <summary><b>Maiores Detalhes</b></summary>
 
-### Banco de Dados
+## **Banco de Dados**
 
 -   usuarios
     -   id
@@ -131,6 +131,18 @@ npm run dev
     -   quantidade_produto
     -   valor_produto (centavos)
     -   produto_imagem (caminho da imagem)
+ 
+## **Categorias Cadastradas**
+
+-   Informática
+-   Celulares
+-   Beleza e Perfumaria
+-   Mercado
+-   Livros e Papelaria
+-   Brinquedos
+-   Moda
+-   Bebê
+-   Games
 
 # Exemplos de Requisição e Resposta
 
